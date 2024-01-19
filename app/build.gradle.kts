@@ -2,6 +2,10 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+   // alias(libs.plugins.safeArgs)
+    id("kotlin-kapt")
+    id("dagger.hilt.android.plugin")
+    id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android {
@@ -45,7 +49,35 @@ dependencies {
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+
+    implementation(libs.viewmodel)
+    implementation(libs.livedata)
+    implementation(libs.runtime)
+    implementation(libs.extensionsArg)
+    implementation(libs.coroutineCore)
+    implementation(libs.coroutineAndroid)
+    implementation(libs.okhttp)
+    implementation(libs.okhhtpInterceptor)
+    implementation(libs.retrofite)
+    implementation(libs.retrofiteAdapter)
+    implementation(libs.retrofiteGson)
+    implementation(libs.gson)
+
+    // Dagger - Hilt
+    implementation("com.google.dagger:hilt-android:2.49")
+    kapt("com.google.dagger:hilt-android-compiler:2.49")
+    kapt("androidx.hilt:hilt-compiler:1.0.0")
+
+}
+kapt {
+    correctErrorTypes = true
+}
+hilt {
+    enableAggregatingTask = true
 }
