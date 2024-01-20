@@ -9,7 +9,6 @@ appcompat = "1.6.1"
 material = "1.11.0"
 constraintlayout = "2.1.4"
 navigationArgs = "2.5.0"
-nav_version = "2.5.0"
 lifecycle = "2.2.6"
 lifecycle_ex_version = "2.2.0"
 coroutine_version = "1.6.1"
@@ -19,6 +18,8 @@ retrofiteAdapter_version = "0.9.2"
 gson_version = "2.8.9"
 navigationFragmentKtx = "2.7.6"
 navigationUiKtx = "2.7.6"
+pinView = "1.4.4"
+
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -28,8 +29,6 @@ espresso-core = { group = "androidx.test.espresso", name = "espresso-core", vers
 appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
 material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
-navigationFragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "nav_version"}
-navigation = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "nav_version"}
 viewmodel = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle"}
 livedata = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycle"}
 runtime = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle"}
@@ -44,6 +43,8 @@ retrofiteGson = { group = "com.squareup.retrofit2", name = "converter-gson", ver
 gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson_version"}
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
+pinview = { group = "com.chaos.view", name = "pinview", version.ref = "pinView" }
+
 
 
 [plugins]

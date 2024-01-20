@@ -2,7 +2,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
-   // alias(libs.plugins.safeArgs)
+    alias(libs.plugins.safeArgs)
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
     id("org.jetbrains.kotlin.plugin.serialization")
@@ -68,7 +68,10 @@ dependencies {
     implementation(libs.retrofiteAdapter)
     implementation(libs.retrofiteGson)
     implementation(libs.gson)
+    implementation(libs.pinview)
 
+//viewBinding
+    implementation("com.github.kirich1409:viewbindingpropertydelegate:1.5.6")
     // Dagger - Hilt
     implementation("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-android-compiler:2.49")
