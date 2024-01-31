@@ -8,4 +8,5 @@
     <color name="text_grey">#767676</color>
     <color name="pinView_grey">#F4F4F4</color>
     <color name="button_dark">#292929</color>
+    <color name="red">#EC0000</color>
 </resources>

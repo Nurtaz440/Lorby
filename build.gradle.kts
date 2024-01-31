@@ -2,7 +2,7 @@
 buildscript{
     dependencies{
         classpath("com.google.dagger:hilt-android-gradle-plugin:2.49")
-        classpath ("org.jetbrains.kotlin:kotlin-serialization:1.6.10")
+       // classpath ("org.jetbrains.kotlin:kotlin-serialization:1.9.0")
         classpath ("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")
     }
 }

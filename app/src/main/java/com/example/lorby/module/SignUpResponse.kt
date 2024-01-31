@@ -1,5 +1,5 @@
 package com.example.lorby.module
 
-data class SignInResponse(
+data class SignUpResponse(
     val message: String
 )

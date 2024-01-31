@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.safeArgs)
     id("kotlin-kapt")
     id("dagger.hilt.android.plugin")
-    id("org.jetbrains.kotlin.plugin.serialization")
+   // id("org.jetbrains.kotlin.plugin.serialization")
 }
 
 android {
@@ -76,7 +76,9 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.49")
     kapt("com.google.dagger:hilt-android-compiler:2.49")
     kapt("androidx.hilt:hilt-compiler:1.0.0")
+   // implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
 
+    implementation("com.squareup.okhttp3:logging-interceptor:4.9.2")
 }
 kapt {
     correctErrorTypes = true
